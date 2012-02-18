@@ -6,8 +6,7 @@ package deadlyspace.jelastic.servint.net;
 */
 public abstract class ApiObject {
    
-   private String session = "", message = "", appkey = "";
-   private String status = "fail";
+   private String session = "", message = "", appkey = "", status = "fail";
    
    public abstract String toJson();
 

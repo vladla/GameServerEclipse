@@ -23,6 +23,7 @@ public abstract class ServletBased extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("application/json;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        System.err.println(request.getRemoteAddr());
         ApiObject ao = null;
         try {
             StringBuilder rqXML = new StringBuilder();
